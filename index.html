@@ -188,13 +188,13 @@
 
     <script>
         // Register Service Worker for PWA validation
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', () => {
-                navigator.serviceWorker.register('./service-worker.js')
-                    .then(reg => console.log('Service Worker registered successfully'))
-                    .catch(err => console.log('Service Worker registration failed: ', err));
-            });
-        }
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+        navigator.serviceWorker.register('./service-worker.js')
+            .then(reg => console.log('Service Worker registered successfully'))
+            .catch(err => console.log('Service Worker registration failed: ', err));
+    });
+}
 
         const formatter = new Intl.NumberFormat('en-US', {
             style: 'currency',
