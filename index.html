@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Advanced Loan Amortization & Escrow Calculator</title>
     <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#2563eb">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
@@ -186,6 +187,15 @@
     </div>
 
     <script>
+        // Register Service Worker for PWA validation
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('./service-worker.js')
+                    .then(reg => console.log('Service Worker registered successfully'))
+                    .catch(err => console.log('Service Worker registration failed: ', err));
+            });
+        }
+
         const formatter = new Intl.NumberFormat('en-US', {
             style: 'currency',
             currency: 'USD',
@@ -315,7 +325,6 @@
 
             let currentBalance = P;
             let totalInterest = 0;
-            let scheduleHTML = '';
             let monthOffset = 0;
             const MAX_MONTHS = 1200;
 
