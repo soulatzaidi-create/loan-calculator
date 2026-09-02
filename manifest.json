@@ -1,1 +1,23 @@
-
+Create manifest.json
+{
+  "name": "Amortization Calculator",
+  "short_name": "Amort Calc",
+  "description": "Calculate loan amortization, extra payments, and escrow.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2563eb",
+  "icons": [
+    {
+      "src": "https://www.pwabuilder.com/assets/icons/icon_192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://www.pwabuilder.com/assets/icons/icon_512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
+main
