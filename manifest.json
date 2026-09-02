@@ -1,0 +1,17 @@
+{
+  "background_color": "#ffffff",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "Advanced Loan Amortization Calculator",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "Loan Calc",
+  "start_url": "/index.html",
+  "theme_color": "#2563eb",
+  "description": "Track loan amortization, escrow, and extra payments.",
+  "lang": "en",
+  "categories": [
+    "education",
+    "finance"
+  ]
+}
